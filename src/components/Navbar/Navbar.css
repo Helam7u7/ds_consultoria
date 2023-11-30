@@ -1,0 +1,53 @@
+.navbar {
+  padding: 6px 70px;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+.navbar .navbar_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar_links .link {
+  list-style: none;
+  font-size: 1.125rem;
+  position: relative;
+  text-align: center;
+}
+.navbar_links .link.txt {
+  padding-bottom: 2px;
+}
+
+.navbar_links .link.txt::before,
+.navbar_links .link.txt::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  transition: width 0.3s ease; /* Ajusta la duración según tus preferencias */
+  background-color: #222;
+}
+
+.navbar_links .link.txt::before {
+  left: 0;
+}
+
+.navbar_links .link.txt::after {
+  right: 100%; /* Coloca el pseudo-elemento a la izquierda del enlace */
+}
+
+.navbar_links .link.txt:hover::before {
+  width: 100%; /* 100% para que se pinte solo de izquierda a derecha */
+}
+.navbar_links .link.cuadro {
+  border: 3px solid #222;
+  padding: 12px 37px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.navbar_links .link.cuadro:hover {
+  background-color: #222;
+  color: #fff;
+}
