@@ -3,7 +3,7 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <div id='contact' className='footer'>
+    <footer id='contact' className='footer'>
       <div className='footer_contact'>
         <div><img src="/img/svg/logow.png" alt="" /></div>
         <div className='contact_list'>
@@ -48,7 +48,7 @@ const Footer = () => {
           <li className='list_info'>Loremimsupn</li>
         </ul>
       </div>
-    </div>
+    </footer>
   )
 }
 
